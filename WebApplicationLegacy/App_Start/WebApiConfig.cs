@@ -1,5 +1,7 @@
 ﻿using System.Web.Http;
 
+[assembly: log4net.Config.XmlConfigurator(Watch = true)]
+
 namespace WebApplicationLegacy
 {
     public static class WebApiConfig

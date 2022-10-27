@@ -5,9 +5,12 @@ namespace WebApplicationLegacy.Controllers
 {
     public class ValuesController : ApiController
     {
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         // GET api/values
         public IEnumerable<string> Get()
         {
+            log.Info("Whooooot! Get is called!!!!");
             return new string[] { "value1", "value2" };
         }
 
